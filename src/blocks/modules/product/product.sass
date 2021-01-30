@@ -1,0 +1,142 @@
+.product
+    background-color: $light-gray
+    min-height: 560px
+    padding: 57.5px 0
+    @media(max-width: 1000px)
+        min-height: 388px
+        padding: 40px 0
+    @media(max-width: 750px)
+        min-height: 294px
+        padding: 20px 0
+    &__inner
+        +flex
+        align-items: center
+        @media(max-width: 560px)
+            flex-direction: column
+            align-items: center
+    &__image
+        position: relative
+        width: 267px
+        height: 445px
+        background-image: url(../img/phone.png)
+        background-repeat: no-repeat
+        background-size: cover
+        @media(max-width: 1000px)
+            width: 185px
+            height: 309px
+        @media(max-width: 750px)
+            width: 169px
+            height: 282px
+    &__icon
+        position: absolute
+        display: block
+        width: 65px
+        height: 65px
+        background-size: cover
+        background-position: center
+        @media(max-width: 1000px)
+            width: 45px
+            height: 45px
+        &--cart
+            background-image: url('../img/icons/phone/cart.svg')
+            top: 8px
+            right: -70px
+            @media(max-width: 1000px)
+                top: 6px
+                right: -49px
+            @media(max-width: 750px)
+                top: auto
+                bottom: 0
+                right: 44px
+        &--percent
+            background-image: url('../img/icons/phone/percent.svg')
+            top: 51px
+            left: -8px
+            @media(max-width: 1000px)
+                top: 35px
+                left: -6px
+            @media(max-width: 750px)
+                top: 34px
+                left: 16px
+        &--like
+            background-image: url('../img/icons/phone/like.svg')
+            right: -17px
+            bottom: 87px
+            @media(max-width: 1000px)
+                right: -12px
+                bottom: 61px
+            @media(max-width: 750px)
+                right: -24px
+                bottom: 77px
+    &__wrap
+        +flex
+        width: 698px
+        @media(max-width: 1000px)
+            width: 484px
+        @media(max-width: 750px)
+            width: 231px / 320px * 100%
+            flex-direction: column
+            text-align: right
+        @media(max-width: 560px)
+            width: 100%
+            text-align: center
+    &__title
+        max-width: 300px
+        font-weight: 900
+        font-size: 33px
+        line-height: 50px
+        @media(max-width: 1000px)
+            max-width: 207px
+            font-size: 22px
+        @media(max-width: 750px)
+            max-width: 100%
+            font-size: 34px
+            line-height: 44px
+            margin-bottom: 10px
+        span
+            font-size: 50px
+            color: $accent
+            @media(max-width: 1000px)
+                font-size: 34px
+            @media(max-width: 750px)
+                font-size: 50px
+                line-height: 65px
+    &__content
+        max-width: 346px
+        @media(max-width: 1000px)
+            max-width: 240px
+        @media(max-width: 750px)
+            max-width: 100%
+            +column
+            align-items: flex-end
+        @media(max-width: 560px)
+            align-items: center
+    &__text
+        font-weight: 300
+        font-size: 21px
+        line-height: 27px
+        margin-bottom: 12px
+        @media(max-width: 1000px)
+            font-size: 16px
+            line-height: 21px
+            margin-bottom: 35px
+        @media(max-width: 750px)
+            width: 179px / 231px * 100%
+            font-size: 13px
+            line-height: 17px
+            margin-bottom: 20px
+    &__btn
+        padding: 20px 11px
+        font-weight: 500
+        font-size: 18px
+        line-height: 24px
+        @media(max-width: 1000px)
+            padding: 14px 8px
+            font-size: 12px
+            line-height: 16px
+    .container
+        @media(max-width: 750px)
+            max-width: 100%
+            padding-left: 0
+        @media(max-width: 560px)
+            padding-left: 10px

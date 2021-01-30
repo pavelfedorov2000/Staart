@@ -1,0 +1,65 @@
+.footer
+    background: #000000
+    padding: 35px 0
+    color: #ffffff
+    @media(max-width: 1000px)
+        padding: 25px 0
+    &__inner
+        +flex
+        align-items: center
+        @media(max-width: 660px)
+            flex-wrap: wrap
+            justify-content: center
+    &__left
+        @media(max-width: 660px)
+            width: 100%
+            display: flex
+            justify-content: center
+            margin-bottom: 15px
+    &__copyright
+        font-size: 11px
+        line-height: 14px
+        margin-top: 4px
+        @media(max-width: 1000px)
+            display: none
+    &__contact
+        @media(max-width: 1000px)
+            align-items: flex-start
+            margin-right: 5px
+        @media(max-width: 660px)
+            align-items: center
+            margin-bottom: 10px
+    &__group
+        text-align: center
+        @media(max-width: 1000px)
+            display: flex
+            align-items: center
+        @media(max-width: 660px)
+            flex-direction: column
+            margin-left: 5px
+    &__group-name
+        border: 1px solid #FFFFFF
+        padding: 0 28.5px
+        font-size: 16px
+        line-height: 21px
+        text-transform: uppercase
+        text-align: center
+        @media(max-width: 1000px)
+            font-size: 11px
+            line-height: 14px
+            padding: 1px 20px
+            margin-left: 3px
+        @media(max-width: 660px)
+            font-size: 16px
+            line-height: 21px
+            padding: 2px 28.5px
+    &__group-descr
+        font-size: 10px
+        line-height: 13px
+        @media(max-width: 1000px)
+            width: 101px
+        @media(max-width: 660px)
+            width: 100%
+
+
+    

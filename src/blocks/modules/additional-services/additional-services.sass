@@ -1,0 +1,67 @@
+.additional-services
+    @media(max-width: 1000px)
+        margin-bottom: 107px
+    @media(max-width: 575px)
+        margin-bottom: 10px
+    &__title
+        margin-bottom: 35px
+    &__inner
+        +column
+        align-items: center
+        @media(max-width: 575px)
+            flex-direction: row
+            flex-wrap: wrap
+            justify-content: space-between
+    &__line
+        +flex
+        align-items: flex-end
+        margin-bottom: 20px
+        @media(max-width: 575px)
+            flex-wrap: wrap
+            justify-content: space-between
+        &:last-child
+            margin-bottom: 0
+        &--first
+            width: 100%
+        &--second
+            width: (184px * 4) + (43px * 3)
+            @media(max-width: 1000px)
+                width: (130px * 4) + (30px * 3)
+            @media(max-width: 800px)
+                width: 100%
+        &--third
+            width: (184px * 3) + (43px * 2)
+            @media(max-width: 1000px)
+                width: (130px * 3) + (30px * 2)
+            @media(max-width: 800px)
+                width: 100%
+    &__item
+        width: 185px
+        +column
+        align-items: center
+        text-align: center
+        &--tablet
+            display: none
+            @media(max-width: 800px)
+                display: flex
+        &--not-tablet
+            @media(max-width: 800px)
+                display: none
+        @media(max-width: 1000px)
+            width: 130px
+        @media(max-width: 575px)
+            width: 147px
+        @media(max-width: 480px)
+            width: 45%
+
+    &__item-img
+        max-width: 100%
+    &__item-text
+        font-size: 9px
+        line-height: 12px
+        color: $text-color
+        margin-top: 5px
+        @media(max-width: 1000px)
+            font-size: 6px
+            line-height: 8px
+            margin-top: 3px

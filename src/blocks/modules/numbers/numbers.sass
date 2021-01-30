@@ -1,0 +1,153 @@
+.numbers
+    min-height: 387px
+    background-color: $accent
+    background-image: url(../img/bg/numbers-bg.png)
+    background-position: left 0
+    background-repeat: no-repeat
+    background-size: 58% 100%
+    padding: 29px 0 31px
+    color: #ffffff
+    @media(max-width: 1000px)
+        min-height: 268px
+    @media(max-width: 775px)
+        background-color: transparent
+        background-image: none
+        padding: 0
+    &__container
+        @media(max-width: 575px)
+            max-width: 100%
+    &__inner
+        +flex
+        @media(max-width: 775px)
+            flex-wrap: wrap
+    &__left, &__right
+        flex: 0 0 50%
+        +column
+        justify-content: space-between
+        @media(max-width: 775px)
+            flex: 0 0 100%
+    &__left
+        padding-right: 30px
+        @media(max-width: 775px)
+            width: 100%
+            flex-direction: row
+            align-items: center
+            min-height: 268px
+            background-image: url(../img/bg/numbers-bg--mobile.png)
+            background-position: right 0
+            background-size: 60% 100%
+            background-repeat: no-repeat
+            padding: 3px 10px 9px 6px
+        @media(max-width: 430px)
+            width: 100%
+            min-height: 177px
+            background-size: 120%
+            padding: 20px 10px
+            div + div
+                width: 100%
+                +column
+                align-items: center
+    &__right
+        padding-left: 157px
+        @media(max-width: 1130px)
+            padding-left: 93px
+        @media(max-width: 775px)
+            width: 100%
+            background-color: $accent
+            min-height: 177px
+            padding: 20px 0
+    &__right-container
+        padding: 0
+        @media(max-width: 775px)
+            padding: 0 10px
+    &__title
+        font-weight: 700
+        font-size: 33px
+        line-height: 44px
+        @media(max-width: 1000px)
+            font-size: 23px
+            line-height: 30px
+        @media(max-width: 775px)
+            font-size: 15px
+            line-height: 20px
+            text-align: right
+        &--right
+            text-align: right
+    &__left-title
+        margin-bottom: 32px
+        @media(max-width: 1000px)
+            margin-bottom: 16px
+        @media(max-width: 775px)
+            margin-bottom: 10px
+        @media(max-width: 430px)
+            text-align: center
+    &__right-title
+        margin-bottom: 50px
+        @media(max-width: 1000px)
+            margin-bottom: 24px
+        @media(max-width: 775px)
+            text-align: center
+            margin-bottom: 12px
+    &__item
+        flex: 0 0 50%
+        &--right
+            text-align: right
+    &__left-item
+        margin-bottom: 45px
+        @media(max-width: 1000px)
+            margin-bottom: 25px
+        @media(max-width: 775px)
+            +column
+            align-items: flex-end
+            margin-bottom: 10px
+            &:last-child
+                margin-bottom: 0
+        @media(max-width: 430px)
+            align-items: center
+    &__right-item
+        @media(max-width: 1000px)
+            margin-bottom: 40px
+        @media(max-width: 775px)
+            margin-bottom: 13px
+    &__items
+        display: flex
+        flex-wrap: wrap
+    &__left-items
+        @media(max-width: 775px)
+            flex-direction: column
+        @media(max-width: 430px)
+            flex-direction: row
+            justify-content: space-between
+            flex-wrap: wrap
+    &__item-num
+        font-weight: 900
+        font-size: 55px
+        line-height: 73px
+        @media(max-width: 1000px)
+            font-size: 39px
+            line-height: 51px
+        @media(max-width: 775px)
+            font-size: 30px
+            line-height: 40px
+    &__item-descr
+        font-size: 16px
+        line-height: 21px
+        color: #ffffff
+        @media(max-width: 1000px)
+            font-size: 11px
+            line-height: 15px
+        @media(max-width: 775px)
+            font-size: 8px
+            line-height: 11px
+    &__item-supnum
+        opacity: .5
+    &__item-subnum
+        opacity: .75
+    &__logos
+        display: none
+        @media(max-width: 775px)
+            +column
+            margin-top: 0
+        @media(max-width: 430px)
+            display: none
+    

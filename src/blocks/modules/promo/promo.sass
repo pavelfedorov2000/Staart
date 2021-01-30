@@ -1,0 +1,76 @@
+.promo
+    padding: 48px 0 11px
+    @media(max-width: 680px)
+        background: url('../img/promo--faded.jpg') center (center/contain) no-repeat
+        padding: 0
+        min-height: 382px
+        +center
+    &__inner
+        +flex
+        align-items: center
+    &__content
+        max-width: 444px
+        @media(max-width: 1000px)
+            max-width: 331px
+        @media(max-width: 680px)
+            max-width: 100%
+            +column
+            align-items: center
+            text-align: center
+    &__title
+        font-weight: 700
+        font-size: 33px
+        line-height: 50px
+        color: #000000
+        margin-bottom: 22px
+        @media(max-width: 1000px)
+            font-size: 25px
+            line-height: 35px
+            margin-bottom: 16px
+        @media(max-width: 480px)
+            font-size: 24px
+        span
+            color: $accent
+            border-right: 5px solid #000000
+            padding-right: 10px
+            @media(max-width: 1000px)
+                padding-right: 5px
+                border-width: 2px
+    &__subtitle
+        font-size: 16px
+        line-height: 25px
+        color: #000000
+        margin-bottom: 33px
+        @media(max-width: 1000px)
+            font-size: 12px
+            line-height: 18px
+            margin-bottom: 25px
+    &__btn
+        box-shadow: 0px 28px 12px -7px rgba(0, 0, 0, 0.1);
+        padding: 11.5px 26px
+        font-weight: 500
+        font-size: 16px
+        line-height: 25px
+        @media(max-width: 1000px)
+            font-size: 12px
+            line-height: 25px
+            padding: 5px 24px
+        @media(max-width: 480px)
+            font-size: 11px
+            padding: 5.5px 23px
+    &__img
+        max-width: 100%
+        height: auto
+        @media(max-width: 680px)
+            display: none
+    &__logos
+        @media(max-width: 775px)
+            display: none
+
+.logos
+    +flex
+    align-items: center
+    margin-top: 50px
+    &__item + &__item
+        @media(max-width: 775px)
+            margin-top: 15px
